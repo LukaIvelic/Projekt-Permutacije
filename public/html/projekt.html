@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/breakpoints.css">
+    <link rel="stylesheet" href="../stylesheets/breakpointsProjekt.css">
+    <title>Projekt - Permutacije</title>
+</head>
+
+<body>
+    <script src="../javascripts/script.js" defer></script>
+    <script src="../javascripts/permutations.js" defer></script>
+
+    <header class="flex-row flex-sm-column flex-md-column flex-lg-row">
+        <h1>Projekt permutacija</h1>
+        <nav>
+            <ul id="ul-nav" class="flex-column flex-md-row">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./zadatci.html">Zadatci</a>
+                </li>
+                <li onclick="scrollToTop()">
+                    <a>Projekt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="scrollInto"></div>
+        <div id="main-div">
+            <h2>Projekt</h2>
+
+            <div id="center-insctructions">
+                <div id="instructions">
+                    <h2>Upute za korištenje</h2>
+                    <br>
+                    <p>
+                        U polje za upisivanje se upiše željena riječ. <b>Konzola</b> će izbaciti kada je riječ prevelika zbog
+                        količine permutacija. <br><br>
+
+                        Isto tako, u polju za učitavanje riječi program prihvaća <b>samo riječi do 9 slova</b> zbog broja permutacija
+                        i razmaci se također <b>ne prihvaćaju</b> <br><br>
+
+                        Padajući izbornik <b>"Ispis u leksikografu..."</b> nudi opciju ispisivanja slova u leksikografu po abecedi
+                        ili po redoslijedu izvršavanja programa (po riječi) <br><br>
+                        
+                        Padajući izbornik <b>"Traži se..."</b> nudi opciju <b>"n-ta permutacija zadane riječi"</b> koja ispiše 
+                        permutaciju riječi/string-a na n-tom mjestu. <br><br>
+
+                        Kako bi <b>"n-ta permutacija zadane riječi"</b> radila <b>padajući izbornik za odabir ispisa leksikografa
+                        mora biti u predefiniranom obliku (<i>mora biti odabrana opcija "Ispis u leksikografu...."</i> )</b> <br><br>
+
+                        Za ispis svih riječi padajući izbornik leksikografa <b>mora biti</b> u početnoj vrijednosti.<br><br>
+
+                        Ispis permutacija je <b>ograničen na 4000</b> permutacija zbog brzine koda, a ujedno i da se server ne sruši<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="flex-div-across">
+            <div id="flex-div-row">
+                <form id="settings">
+                    <input type="text" name="textValue" id="word" placeholder="Upiši riječ" onkeyup="updateProcess('Keystroke detected')">
+
+                    <select name="order" id="lexicograph" onclick="updateProcess('Lexicographic output select detected')">
+                        <option value="ispis">Ispis u leksikografu...</option>
+                        <option value="abecedi">Abecedno</option>
+                        <option value="rijeci">Po riječi</option>
+                    </select>
+
+                    <select name="numPermutation" id="way-of-perm" onclick="checkValueSelect2();updateProcess('Permutation output select detected')">
+                        <option value="trazi">Traži se...</option>
+                        <option value="nta">n-ta permutacija zadane riječi</option>
+                        <option value="brPerm">ispis svih riječi</option>
+                    </select>
+
+                    <input type="number" name="" id="permutation-num" placeholder="n" onkeyup="updateProcess('Number of permutations number changed')">
+                    <input type="button" value="Pretraži" id="search" onclick="Main();updateProcess('Search button clicked')">
+
+                    <output style="white-space: pre-line;" id="outOp"></output>
+                </form>
+            </div>
+            <div id="flex-div-column">
+                <form id="settingsConsole">
+                    <output style="white-space: pre-line;" id="all-permutations"></output>
+                </form>
+                <input type="button" value="Očisti konzolu" id="clear-console-btn" onclick="clearConsole();updateProcess('Console cleared')">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="tsrb-logo-div">
+            <div id="absolute-div">
+                <div id="circle1Div">
+                    <img src="../images/tsrb.png" id="img-tsrb">
+                </div>
+            </div>
+            <label for="copyright" id="cpr">&copy; 2022 PROJEKT PERMUTACIJA TŠRB</label>
+        </div>
+
+        <table id="footer-table">
+            <tr>
+                <td>
+                    <label for="excel">
+                        <a href="../media/Evidencija.xlsx" class="file-href">Excel - Evidencija</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="Word">
+                        <a href="./images/tsrb.png" class="file-href">Word - Opis</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="literatura">
+                        <a href="../html/literatura.html" class="file-href">Literatura</a>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

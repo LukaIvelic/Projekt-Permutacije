@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/breakpoints.css">
+    <title>Home - Permutacije</title>
+</head>
+
+<body>
+    <script src="./javascripts/script.js" defer></script>
+    <header class="flex-row flex-sm-column flex-md-column flex-lg-row">
+        <h1>Projekt permutacija</h1>
+        <nav>
+            <ul id="ul-nav" class="flex-column flex-md-row">
+                <li onclick="scrollToTop()">
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a href="./html/zadatci.html">Zadatci</a>
+                </li>
+                <li>
+                    <a href="./html/projekt.html">Projekt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="scrollInto"></div>
+        <div id="main-div">
+            <h2>Dobrodošli!</h2>
+            <table id="main-table">
+                <tr>
+                    <td colspan="2" id="ivelic">
+                        <label for="">
+                            Evo, što da kažem? Kao lead developer mogu reći kako je projekt bio dosta zanimljiv.
+                            Nije bio posebice težak što se tiče dizajniranja web stranice, jer to volim. Međutim,
+                            programiranje permutacije nije bilo toliko lagano koliko sam očekivao. Naime, bila je
+                            opcija raditi sa ASP.NET framework-om ili napraviti statičku web stranicu. Na kraju smo
+                            se svi zajedno odlučili da je node.js i statička web stranica najbolji izbor jer imamo
+                            jedan program koji se ne mijenja. Sve u svemu, projekt je vrlo lijepo na kraju ispao.
+                            Timski rad je bio vrhunski.
+                        </label>
+                        <br>
+                        <p class="signature">~ Luka Ivelić &nbsp;(Lead developer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="sabljic">
+                        <label for="">
+                            Evo, po završetku projekta imao bih par stvari za reći. Projekt koji smo radili je bio
+                            zaista dobar i zanimljiv. Članovi tima su bili odlični. Naš lead developer nas je sve dobro
+                            organizirao i na kraju je projekt uspješno napravljen. Bit će mi zaista drago predstaviti
+                            Vam naš projekt.
+                        </label>
+                        <br>
+                        <p class="signature">~ Florijan Sabljić &nbsp;(Predstavnik projekta)</p>
+                    </td>
+                    <td id="juraga">
+                        <label for="">
+                            Kao savjetnik developer mogu reći da je projekt bio kompliciran što se tiče
+                            programiranja permutacije na pravi način. Kolega Ivelić je prvobitno imao ideju da stranicu
+                            napravimo pomoću ASP.NET framework-a, no kao bolja opcija se pokazala statička web stranica.
+                            Kod samog programiranja permutacija je bio problem svrstavanja JavaScript koda u datoteke,
+                            ali sam onda došao na ideju da se kod rasporedi u više datoteka zbog lakšeg snalaženja.
+                            Kao tim smo se izvrsno slagali i svatko je svoj posao odradio
+                            besprijekorno što je rezultiralo odličnim programom.
+                        </label>
+                        <br>
+                        <p class="signature">~ Bartol Juraga &nbsp;(Savjetnik developer)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="wilder">
+                        <label for="">
+                            Kao "matematički stručnjak" mogu reći da matematički dio ovog projekta nije nešto težak i
+                            zahtijevan ukoliko je općenito znanje i razumijevanje matematike solidno. To ne znači da
+                            nije bilo naporno jer je ipak bilo ponešto zadataka za obradit i napisati što je trajalo.
+                            Naučene formule se koriste i u programskom dijelu. Bilo mi je drago raditi projekt jer sam
+                            naučio puno o permutacijama i bilo mi je zabavno raditi sa prijateljima.
+                        </label>
+                        <br>
+                        <p class="signature">~ Viktor Wilder &nbsp;(Stručnjak matematičkih modela)</p>
+                    </td>
+                    <td id="conjar">
+                        <label for="">
+                            Po meni je ovaj projekt bio uspješno izvršen, iako smo malo odugovlačili na kraju. Ponosan
+                            sam na sebe jer sam odlično napravio evidencijsku tablicu u excelu. Bilo je rasprava
+                            oko nekih stvari vezanih uz dokumentaciju, al smo se svi složili za istu stvar.
+                        </label>
+                        <br>
+                        <p class="signature">~ Patrik Conjar &nbsp;(Koordinator rokova)</p>
+                    </td>
+                </tr>
+            </table>
+
+
+            <div id="definitions">
+                <label>U našim očima: </label>
+                <ul id="role-definition-list" class="flex-column flex-xl-row">
+                    <li onclick="displayP('ld')">Lead developer</li>
+                    <li onclick="displayP('pp')">Predstavnik projekta</li>
+                    <li onclick="displayP('sd')">Savjetnik developer</li>
+                    <li onclick="displayP('smm')">Stručnjak matematičkih modela</li>
+                    <li onclick="displayP('kr')">Koordinator rokova</li>
+                </ul>
+
+                <p class="def-paragraph" id="ld">
+                    Lead developer je zadužen za pisanje cijelog koda i pretvaranje
+                    rješenih matematičkih zadataka i matematičkih modela u programski
+                    kod.
+                </p>
+
+                <p class="def-paragraph" id="pp">
+                    Predstavnik projekta predlaže ideje timu o tome kako će se projekt
+                    prikazati, hoće li biti dokumentacije, alternativnog načina predstavljanja
+                    onog što je tim postigao.
+                </p>
+
+                <p class="def-paragraph" id="sd">
+                    Savjetnik developer je dodatni developer koji traži više različitih koncepata
+                    dijelova programa. Njegova glavna pitanja su: "Hoće li proces biti brži na ovaj način?",
+                    "Je li ovaj blok koda bolji za rauzmijeti od prijašnjeg?" i "Nedostaje li ti gdje komentar?".
+                </p>
+
+                <p class="def-paragraph" id="smm">
+                    Uloga stručnjaka matematičkih modela je: rješavanje zadataka, uočavanje razlika između rješenih
+                    zadataka, navođenje programera na pravi cilj projekta.
+                </p>
+
+                <p class="def-paragraph" id="kr">
+                    Koordinator rokova mora biti spreman evidentirati kada je tko radio i tražiti od tima
+                    točne i iskrene datume rada. Ujedno i postavlja rokove do kojih određeni članovi tima
+                    moraju biti gotovi sa određenim dijelovima zadatka.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="tsrb-logo-div">
+            <div id="absolute-div">
+                <div id="circle1Div">
+                    <img src="./images/tsrb.png" id="img-tsrb">
+                </div>
+            </div>
+            <label for="copyright" id="cpr">&copy; 2022 PROJEKT PERMUTACIJA TŠRB</label>
+        </div>
+
+        <table id="footer-table">
+            <tr>
+                <td>
+                    <label for="excel">
+                        <a href="./media/Evidencija.xlsx" class="file-href">Excel - Evidencija</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="Word">
+                        <a href="./images/tsrb.png" class="file-href">Word - Opis</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="literatura">
+                        <a href="./html/literatura.html" class="file-href">Literatura</a>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

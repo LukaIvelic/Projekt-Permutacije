@@ -1,0 +1,116 @@
+@import url('./style.css');
+
+@media (min-width:992px){
+    #ul-nav{
+        column-gap: 1rem;
+    }    
+    #ul-nav li{
+        width: 7rem;
+    }
+    main{
+        height: 130rem;
+    }
+    #definitions{
+        margin-top: -5rem;
+    }
+}
+
+@media (min-width: 1101px){
+    #main-table{
+        width: 60rem;
+    }
+    main{
+        height: 120rem;
+    }
+}
+
+@media (max-width:2560px){
+    #definitions{
+        margin-top: -10rem;
+    }
+}
+
+@media (max-width:1200px){
+    #main-table{
+        width: 50rem;
+    }
+    #main-div{
+        margin-top: 15rem;
+    }
+
+    #definitions{
+        height: 30rem;
+    }
+
+    #role-definition-list{
+        margin-top: 25rem;
+    }
+
+    .def-paragraph{
+        margin-top: 70rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    main{
+        height: 120rem;
+    }
+
+    #role-definition-list{
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    main{
+        height: 150rem;
+    }
+
+    #role-definition-list{
+        row-gap: 1rem;
+    }
+
+    #definitions{
+        margin-top: -3rem;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        padding-top: 2rem;
+    }
+    #ul-nav{
+        row-gap: 1rem;
+    }
+    #main-table{
+        width: 40rem;
+    }
+    main{
+        height: 170rem;
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        height: 10rem;
+        padding: 2rem;
+    }
+    header h1{
+        margin-left: 3rem;
+    }
+    #main-table{
+        width: 30rem;
+    }
+    footer{
+        height: 7rem;
+    }
+    :root{
+        --height-set: 5rem;
+    }
+    #cpr{
+        margin-left: -2rem;
+    }
+    main{
+        height: 200rem;
+    }
+}

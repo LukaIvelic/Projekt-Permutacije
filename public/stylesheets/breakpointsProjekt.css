@@ -1,0 +1,11 @@
+@media (min-width: 0px) and (max-width: 2560px){
+    body{
+        height: 60rem;
+    }
+    main{
+        height: 100rem !important;
+    }
+    #main-div{
+        height: 25rem !important;
+    }
+}

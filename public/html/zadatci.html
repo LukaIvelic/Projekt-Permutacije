@@ -1,0 +1,597 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/breakpoints.css">
+    <link rel="stylesheet" href="../stylesheets/zadatci.css">
+    <title>Teorija - Permutacije</title>
+</head>
+
+<body>
+    <script src="../javascripts/script.js" defer></script>
+    <header class="flex-row flex-sm-column flex-md-column flex-lg-row">
+        <h1>Projekt permutacija</h1>
+        <nav>
+            <ul id="ul-nav" class="flex-column flex-md-row">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li onclick="scrollToTop()">
+                    <a>Zadatci</a>
+                </li>
+                <li>
+                    <a href="./projekt.html">Projekt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="scrollInto"></div>
+        <div id="main-div-zad">
+            <h2 style="padding-bottom: 5rem;">Zadatci</h2>
+
+            <html>
+
+                <head>
+                    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+                    <meta name=Generator content="Microsoft Word 15 (filtered)">
+                    <style>
+                        /* Font Definitions */
+                        @font-face {
+                            font-family: Wingdings;
+                            panose-1: 5 0 0 0 0 0 0 0 0 0;
+                        }
+
+                        @font-face {
+                            font-family: "Cambria Math";
+                            panose-1: 2 4 5 3 5 4 6 3 2 4;
+                        }
+
+                        @font-face {
+                            font-family: DengXian;
+                            panose-1: 2 1 6 0 3 1 1 1 1 1;
+                        }
+
+                        @font-face {
+                            font-family: Calibri;
+                            panose-1: 2 15 5 2 2 2 4 3 2 4;
+                        }
+
+                        @font-face {
+                            font-family: "\@DengXian";
+                            panose-1: 2 1 6 0 3 1 1 1 1 1;
+                        }
+
+                        /* Style Definitions */
+                        p.MsoNormal,
+                        li.MsoNormal,
+                        div.MsoNormal {
+                            margin-top: 0in;
+                            margin-right: 0in;
+                            margin-bottom: 8.0pt;
+                            margin-left: 0in;
+                            line-height: 107%;
+                            font-size: 11.0pt;
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        p.MsoListParagraph,
+                        li.MsoListParagraph,
+                        div.MsoListParagraph {
+                            margin-top: 0in;
+                            margin-right: 0in;
+                            margin-bottom: 8.0pt;
+                            margin-left: .5in;
+                            line-height: 107%;
+                            font-size: 11.0pt;
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        p.MsoListParagraphCxSpFirst,
+                        li.MsoListParagraphCxSpFirst,
+                        div.MsoListParagraphCxSpFirst {
+                            margin-top: 0in;
+                            margin-right: 0in;
+                            margin-bottom: 0in;
+                            margin-left: .5in;
+                            line-height: 107%;
+                            font-size: 11.0pt;
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        p.MsoListParagraphCxSpMiddle,
+                        li.MsoListParagraphCxSpMiddle,
+                        div.MsoListParagraphCxSpMiddle {
+                            margin-top: 0in;
+                            margin-right: 0in;
+                            margin-bottom: 0in;
+                            margin-left: .5in;
+                            line-height: 107%;
+                            font-size: 11.0pt;
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        p.MsoListParagraphCxSpLast,
+                        li.MsoListParagraphCxSpLast,
+                        div.MsoListParagraphCxSpLast {
+                            margin-top: 0in;
+                            margin-right: 0in;
+                            margin-bottom: 8.0pt;
+                            margin-left: .5in;
+                            line-height: 107%;
+                            font-size: 11.0pt;
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        .MsoChpDefault {
+                            font-family: "Calibri", sans-serif;
+                        }
+
+                        .MsoPapDefault {
+                            margin-bottom: 8.0pt;
+                            line-height: 107%;
+                        }
+
+                        @page WordSection1 {
+                            size: 8.5in 11.0in;
+                            margin: 1.0in 1.0in 1.0in 1.0in;
+                        }
+
+                        div.WordSection1 {
+                            page: WordSection1;
+                        }
+
+                        /* List Definitions */
+                        ol {
+                            margin-bottom: 0in;
+                        }
+
+                        ul {
+                            margin-bottom: 0in;
+                        }
+                    </style>
+
+                </head>
+
+                <body lang=EN-US style='word-wrap:break-word'>
+
+                    <div class=WordSection1>
+
+                        <p class=MsoNormal align=center style='text-align:center'><span lang=HR
+                                style='font-size:18.0pt;line-height:107%'>Permutacije</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>Permutacija
+                                je pojam u matematici za načine na koji možemo odabrati uređenu n-torku. Računa
+                                se kao n! (en faktorijel).</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>1.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Na koliko načina možemo razmjestiti 5 šešira?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>5 različitih šešira </span><span lang=HR style='font-size:
+    12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:12.0pt;line-height:107%'>
+                                n=5</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(5) = 5! = 5 * 4 * 3 * 2 * 1</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(5) = 120</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj:  Šeširi se mogu razmjestiti na 120 različitih načina.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>2.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Koliko besmislenih i smislenih riječi možemo dobiti od riječi IVAN.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>I v a n </span><span lang=HR style='font-size:12.0pt;
+    line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> n=4</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(4) = 4! = 4 * 3 * 2 * 1</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(4) = 24</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: Može se dobiti 24 smislene i besmislene riječi.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>3.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Pred trgovinom se nalaze tri dečka i tri djevojčice. Na koliko načina mogu
+                                oblikovati red?<br>
+                                3 djevojčice + 3 dječaka </span><span lang=HR style='font-size:12.0pt;
+    line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> n = 3 + 3 = 6</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(6) = 6! = 6 * 5 * 4 * 3 * 2 * 1</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(6) = 720</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: Mogu napraviti red na 720 različitih načina.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>4.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Pred trgovinom se nalaze tri dječaka i tri djevojčice. Na koliko načina mogu
+                                oblikovati red tako da stoje naizmjence prvo djevojčica pa dječak?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>3 djevojčice i 3 dječaka </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> n=6</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rješenje nije 6! jer imamo zadane upute</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P = 3 * 3 * 2 * 2 * 1 * 1</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P = 36</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: Mogu napraviti red na 36 različitih načina.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>5.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Kao i 4., ali koliko redova mogu napraviti da stoje naizmjence?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P = 36 + 36 </span><span lang=HR style='font-size:12.0pt;
+    line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> jer ovaj put moze i prvo dječak stajati</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P = 72</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: 72</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>6.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                3 knjige od J.R.R. Tolkiena, 5 od J.K.Rowling i 2 od E. Ionesc. Na Koliko ih
+                                načina možemo poredati :</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>a)<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>Bilokakav
+                                poredak</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n = 3 + 5 + 2</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n = 10</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>P(10) = 10! </span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>P(10) = 3 628 800</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>Rj : Na 3 628 800 načina</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>b)<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>Knjige od
+                                svakog autora pojedinačno budu zajedno, u bilokojem poretku</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n<sub>1</sub> = 3</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n<sub>2</sub> = 5</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n<sub>3</sub> = 2</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>n<sub>4</sub> = 3 </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> 3 autora</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>P = P(3) * P(3) * P(5) * P(2) = 6 * 6
+                                * 120 * 2</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>P = 8640</span></p>
+
+                        <p class=MsoListParagraphCxSpLast style='margin-left:.75in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>Rj : Na 8640 načina.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>7.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                U koliko permutacija skup S = {1,2,3,4,5,6,7,8,9} znamenke 2,4,6 NE stoje jedna
+                                do druge u točno tome poretku?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>n<sub>uk </sub>= 9</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P<sub>uk</sub> = 9! = 362 880</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>N' = 7 * 6! = 7!</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>N = Puk – N' = 9! – 7! = 357 840</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: Na 357 840 načina.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>8.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Martina ima ogrlicu sa 5 kamenčića različitih boju, no ogrlica je puknula. Na
+                                koliko načina može napraviti novu?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Pošto je ogrlica okrugla, jedan kamenčić moramo fiksirati kako
+                                ne bi rotaciju brojali kao novu verziju ogrlice te je zato n = 5 – 1 </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> n=4</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(4) = 4! = 24</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Rj: Na 24 načina.</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>9.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Kralj Arthur oko okruglog stola okupio je 12 vitezova, na koliko je načina to
+                                mogao napraviti?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>n = 13 – 1 </span><span lang=HR style='font-size:12.0pt;
+    line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> Arthur je na istom mjestu da se rotacije ne broje</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(12) = 12!</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>P(12) =  479 001 600</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>10.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Kao 9., ali Sir Tristan ne sjedi pored njega.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>N = 11 * 10 * 10! </span><span lang=HR style='font-size:12.0pt;
+    line-height:107%;font-family:Wingdings'>à</span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> 11 može sjesti lijevo od Arthura, a 10 desno i na
+                                mjesta između može sjesti bilo tko na bilo koje mjesto</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>N = 798 336 000</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>Formula
+                                za permutacije u krug je : P(n-1) = (n-1)!</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>ZA
+                                ONE KOJI ŽELE ZNATI VIŠE</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>1.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>Koja je
+                                po leksikografskome poretku riječ MATEO permutacija odgovarajućeg skupa slova?</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Skup slova je S = {A, E, M, O, T}</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Redom analiziramo :</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>            Riječi koje počinju slovom A je 4! = 24 </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> 1. – 24.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>            Riječi koje počinju slovom E je 4! = 24 </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> 25. – 48.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>            Riječi koje počinju slovom M (to tražimo) je 4! =
+                                24 </span><span lang=HR style='font-size:12.0pt;line-height:107%;font-family:
+    Wingdings'>à</span><span lang=HR style='font-size:12.0pt;line-height:107%'> 49.
+                                – 72.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>            Riječi koje počinju slovom MA je 3! = 6 </span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>à</span><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'> 49. – 54.</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>            54. permutacija je MATOE, a nama treba samo O i E
+                                zamijeniti što je 53.</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Riječ MATEO nalazi se na 53. permutaciji skupa slova S</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=HR
+                                style='font-size:12.0pt;line-height:107%'>2.<span
+                                    style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></span><span lang=HR style='font-size:12.0pt;line-height:107%'>ZADATAK :
+                                Što je 77. permutacija skupa S = {A,K,O,R,T}</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Riječi koje započinju sa A, K ili O su 4! + 4! + 4! = 3 * 4!
+                                = 72</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Riječi koje počinju slovom R su od 72 sljedećih 24, gdje se
+                                nalazi tražena</span></p>
+
+                        <p class=MsoListParagraphCxSpMiddle><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>Riječi koje počinju sa RA su 73. – 78., možemo uočiti da je
+                                78. permutacija RATOK, mi samo trebamo zamijeniti zadnja dva slova da dobijemo
+                                77.</span></p>
+
+                        <p class=MsoListParagraphCxSpLast><span lang=HR style='font-size:12.0pt;
+    line-height:107%'>77. permutacija skupa slova S je RATKO</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>MULTISKUP
+                                (elementi se ponavljaju)</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal style='text-indent:.5in'><span lang=HR style='font-size:
+    12.0pt;line-height:107%'>PRIMJER</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            S
+                                = {a, a, n}</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            a
+                                i a su isti, tj. ponavljaju se</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            permutacije
+                                su : aan, aan, ana, ana, naa, naa</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            Vidimo
+                                da je tu svaka druga ista, što se ne broji te je P=3, formula za to u ovom
+                                slučaju je            P = 3!/2!</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>Opća
+                                formula je </span><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+    position:relative;top:7.0pt'></span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>P<sub>n</sub><sup>k1,
+                                    k2,…,kr</sup> = n!/(k<sub>1</sub>! * k<sub>2</sub>! * … * k<sub>r</sub>!)</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            k<sub>1</sub>
+                                – koliko se puta ponavlja element 1 u skupu</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            k<sub>2
+                                </sub>– koliko se puta ponavlja element 2 u skupu</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>            k<sub>r</sub>
+                                – koliko se puta ponavlja element r u skupu</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal><span lang=HR style='font-size:12.0pt;line-height:107%'>&nbsp;</span></p>
+
+                        <p class=MsoNormal style='margin-left:.5in'><span lang=HR style='font-size:
+    12.0pt;line-height:107%'>PRIMJER<br>
+                                S = {A, A, A, E, I, K, M, M, T, T}</span></p>
+
+                        <p class=MsoNormal style='text-indent:.5in'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+    position:relative;top:7.0pt'></span><span lang=HR style='font-size:
+    12.0pt;line-height:107%'> = 151 200</span></p>
+
+                        <p class=MsoListParagraph><span lang=HR style='font-size:12.0pt;line-height:
+    107%'>&nbsp;</span></p>
+
+                    </div>
+
+                </body>
+
+            </html>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="tsrb-logo-div">
+            <div id="absolute-div">
+                <div id="circle1Div">
+                    <img src="../images/tsrb.png" id="img-tsrb">
+                </div>
+            </div>
+            <label for="copyright" id="cpr">&copy; 2022 PROJEKT PERMUTACIJA TŠRB</label>
+        </div>
+
+        <table id="footer-table">
+            <tr>
+                <td>
+                    <label for="excel">
+                        <a href="../media/Evidencija.xlsx" class="file-href">Excel - Evidencija</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="Word">
+                        <a href="./images/tsrb.png" class="file-href">Word - Opis</a>
+                    </label>
+                </td>
+
+                <td>
+                    <label for="literatura">
+                        <a href="../html/literatura.html" class="file-href">Literatura</a>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
